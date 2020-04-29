@@ -26,14 +26,14 @@ Submit a zip file containing the answers to the questions above. Also include th
 
 1. Create a new public class called GameMechanics with no main().
 2. Create a static function **BattleTester** that:
-  1. Has one Arraylist parameters, Each Arraylist must contain either all Heros, Villians, or Characters.
-  2. Returns true if the Arraylist contains all heros, 
-  3. Returns false otherwise
-  4. Must use wildcards.
-  5. Can use instanceof to help you.
+    1. Has one Arraylist parameters, Each Arraylist must contain either all Heros, Villians, or Characters.
+    2. Returns true if the Arraylist contains all heros, 
+    3. Returns false otherwise
+    4. Must use wildcards.
+    5. Can use instanceof to help you.
 3. Prove that your function works by:
-  1. adding several correct Villains and Heroes Arraylists, Arraylist , Arraylist<Villian> for example.
-  2. **trying** to add an Arraylist of Blocks (but better be stopped by the compiler or runtime)
+    1. adding several correct Villains and Heroes Arraylists, Arraylist , Arraylist<Villian> for example.
+    2. **trying** to add an Arraylist of Blocks (but better be stopped by the compiler or runtime)
   
 Submit a zip file with the new code and any other modifications made.
 
