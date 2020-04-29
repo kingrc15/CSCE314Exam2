@@ -15,6 +15,8 @@ public class Driver {
 		System.out.println("Please enter the curve percentage you will receive: (example 5%) ");
 		curve = sc.nextInt();
 		
+		sc.close();
+		
 		// just for a hint for the integer (Integer) portion, try below:
 		// https://docs.oracle.com/javase/8/docs/api/?java/lang/Integer.html
 		
@@ -69,6 +71,24 @@ public class Driver {
 		System.out.println("Here is the resulting value for value2->" + value2);
 		System.out.println("Here is the resulting value for value3->" + value3);
 		System.out.println("Here is the resulting value for value4->" + value4);
+		
+		for (int i = 0; i < 4; ++i) 
+		{
+			System.out.println("Value at " + i + " in value4 is " + value4[i]);
+		}
+		
+		passingExercise(value1, value2, value3, value4);
+		
+		System.out.println("\nPass values through passingExercise");
+		System.out.println("Here is the resulting value for value1->" + value1);
+		System.out.println("Here is the resulting value for value2->" + value2);
+		System.out.println("Here is the resulting value for value3->" + value3);
+		System.out.println("Here is the resulting value for value4->" + value4);
+		
+		for (int i = 0; i < 4; ++i) 
+		{
+			System.out.println("Value at " + i + " in value4 is " + value4[i]);
+		}
 		
 		
 		// %%%%%%%%%%%%%%%%%%%% QUESTION 5 %%%%%%%%%%%%%%%%%%%%%%%
