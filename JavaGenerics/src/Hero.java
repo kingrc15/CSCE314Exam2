@@ -39,7 +39,7 @@ public class Hero extends Character
 	@Override
 	public String toString()
 	{
-		return "Hero [armour=" + armour + ", hearts=" + hearts + ", carrying=" + getCarrying() + ", name=" + name
+		return "Hero [name=" + name + ", armour=" + armour + ", hearts=" + hearts + ", carrying=" + getCarrying()
 				+ ", location=" + location + "]";
 	}
 

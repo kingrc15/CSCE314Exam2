@@ -13,7 +13,7 @@ public class Block extends Item
 
 	@Override
 	public String toString() {
-		return "Block [density=" + density + ", name=" + name + ", location=" + location + "]";
+		return "Block [name=" + name + ", density=" + density + ", location=" + location + "]";
 	}
 	
 	

@@ -24,7 +24,7 @@ public class Villain extends Character
 
 	@Override
 	public String toString() {
-		return "Villain [nocturnal=" + nocturnal + ", hearts=" + hearts + ", carrying=" + getCarrying() + ", name=" + name
+		return "Villain [name=" + name + ", nocturnal=" + nocturnal + ", hearts=" + hearts + ", carrying=" + getCarrying()
 				+ ", location=" + location + "]";
 	}	
 	
