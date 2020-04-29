@@ -1,11 +1,11 @@
-#Question 1
+# Question 1
 
 Setup
 
 Create the directory “CollectionExercises”. Within the newly created directory, download the files found at: 
 http://faculty.cse.tamu.edu/slupoli/notes/Java/flippedLabs/Collections/Address.java
 Code the Animal class and the Vehicle class, as shown below.
-![Image of UML](https://tamu.blackboard.com/bbcswebdav/pid-6736775-dt-content-rid-64146439_1/xid-64146439_1)
+![Image of UML](https://tamu.blackboard.com/bbcswebdav/pid-6736775-dt-content-rid-64146439_1/courses/CSCE.314.2011.M1/Screen%20Shot%202020-04-17%20at%2010.46.55%20AM.png)
  
 Make sure to do the following:
 
@@ -15,7 +15,8 @@ Make sure to do the following:
 Submit in a zip file: Vehicle.java, Animal.java and Driver.java
 
 
-#Question 2
+
+# Question 2
 	
 Using the code already developed, create 4 instances for each class and place them into an ArrayList. Create the ability for the ArrayList to be sorted by weight. Using either a Comparator or Comparable is fine. Print out the list before and after the list to prove it works correctly.
 
@@ -29,7 +30,8 @@ Make sure to:
 Submit in a zip file: Animal.java, Vehicle.java and Driver.java.			
 					
  
-#Question 3
+ 
+# Question 3
 	
 Create one ArrayList that handles basic Objects such as:
 
@@ -44,7 +46,8 @@ Make sure to:
 Submit Driver.java.			
 					
 
-#Question 4
+
+# Question 4
 	
 Simply put, sort the combined list of Animals and Vehicles by State. AK should be first. No other help will be given. Plan accordingly on your sorting design.
 
