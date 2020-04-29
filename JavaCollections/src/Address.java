@@ -1,5 +1,5 @@
 
-public class Address 
+public class Address
 {
 	private String state; // 2 chars only!!
 	private String street;
@@ -67,7 +67,4 @@ public class Address
 			return false;
 		return true;
 	}
-	
-	
-
 }
