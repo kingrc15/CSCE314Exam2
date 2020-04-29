@@ -6,19 +6,21 @@ Create the directory “GenericExercises”. Within the newly created directory,
 
 http://faculty.cse.tamu.edu/slupoli/notes/Java/flippedLabs/Generics/code
 
-![UML](/JavaGenerics/imgs/Generics1.png)
+![UML1](/JavaGenerics/imgs/Generics1.png)
 
 1. Create a VERY basic UML of how the coded files relate, similar to the above UML diagram (Draw your most base class at the very top, then trickle down, shown above).
 
+![UML2](/JavaGenerics/imgs/Minecraft UML.vpd.png)
+
 2. Which has more “hearts”, Creeper or Bowen?
-
+    * Creeper
 3. How many items can a Villain carry?
-
+    * 1
 4. There is one example of Polymorphism in the code. Find it and write it.
-
+    * BattleRoyale is an ArrayList of Characters. Heros and Villains are added to it.
 5. Edit the code that when an instance is printed, the name is first (or farthest left).
-
 6. Which Character can have armour?
+    * Heros
 
 Submit a zip file containing the answers to the questions above. Also include the actual code (.java file) with the modifications.
 
