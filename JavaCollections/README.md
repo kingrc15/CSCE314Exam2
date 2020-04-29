@@ -5,7 +5,7 @@ Setup
 Create the directory “CollectionExercises”. Within the newly created directory, download the files found at: 
 http://faculty.cse.tamu.edu/slupoli/notes/Java/flippedLabs/Collections/Address.java
 Code the Animal class and the Vehicle class, as shown below.
-![Image of UML](https://tamu.blackboard.com/bbcswebdav/pid-6736775-dt-content-rid-64146439_1/courses/CSCE.314.2011.M1/Screen%20Shot%202020-04-17%20at%2010.46.55%20AM.png)
+![Image of UML](./imgs/JavaCollections.png)
  
 Make sure to do the following:
 
