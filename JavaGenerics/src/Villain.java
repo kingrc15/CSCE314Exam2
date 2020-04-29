@@ -28,4 +28,27 @@ public class Villain extends Character
 				+ ", location=" + location + "]";
 	}	
 	
+	@Override
+	public int compareTo(Character other)
+	{
+		double obj1Strength = hearts;
+		double obj2Strength = other.getHearts();
+
+		if (other instanceof Hero)
+		{
+			obj2Strength += obj2Strength * (1.5 * ((Hero) other).getArmour() / 100);
+		}
+
+		if (obj1Strength > obj2Strength)
+		{
+			return 1;
+		} else if (obj1Strength == obj2Strength)
+		{
+			return 0;
+		} else
+		{
+			return -1;
+		}
+	}
+	
 }
