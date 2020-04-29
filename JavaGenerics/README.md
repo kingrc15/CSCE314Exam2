@@ -10,7 +10,7 @@ http://faculty.cse.tamu.edu/slupoli/notes/Java/flippedLabs/Generics/code
 
 1. Create a VERY basic UML of how the coded files relate, similar to the above UML diagram (Draw your most base class at the very top, then trickle down, shown above).
 
-![UML2](/JavaGenerics/imgs/Minecraft UML.vpd.png)
+<center> <img src="/JavaGenerics/imgs/Minecraft UML.png"> </center>
 
 2. Which has more “hearts”, Creeper or Bowen?
     * Creeper
