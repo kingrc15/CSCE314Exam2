@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Driver {
 
@@ -8,29 +9,31 @@ public class Driver {
 		int curve = -1;
 		float grade = (float) -0.0;
 		// Create the Scanner code to gather a float and an integer using the variables already created
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Please enter the grade you received: ");
-		// code here
+		grade = sc.nextFloat();
 		System.out.println("Please enter the curve percentage you will receive: (example 5%) ");
-		// code here
-		
+		curve = sc.nextInt();
 		
 		// just for a hint for the integer (Integer) portion, try below:
 		// https://docs.oracle.com/javase/8/docs/api/?java/lang/Integer.html
 		
-
-		System.out.println("Here are the values collected");
 		// Display both values collected using a System.out.println
-		
+		System.out.println("Here are the values collected");
+		System.out.println(grade);
+		System.out.println(curve);
 		
 		// %%%%%%%%%%%%%%%%%%%% QUESTION 2 %%%%%%%%%%%%%%%%%%%%%%%
 		
 		// %%%%%%%%%%%%%%%%%%%% QUESTION 3 %%%%%%%%%%%%%%%%%%%%%%%
-		
+	
 		// Using the variables and the new values received (curve and grade), call the curvedGrade  
 		// (first one) function from here and display the results the function returns here
 		// 1. fix the curvedGrade function below. Remember, if you get a 90, with 10% curve, you now have a 99%
 		// 2. call function
 		// 3. display result
+		System.out.println("Here is the curved grade:");
+		System.out.println(curvedGrade(grade, curve));
 					
 		// %%%%%%%%%%%%%%%%%%%% QUESTION 3 %%%%%%%%%%%%%%%%%%%%%%%
 		
@@ -39,7 +42,14 @@ public class Driver {
 		// Create instance of a Student here
 		// call and pass STUDENT and a curved value to curvedGrade (second one) function
 		// display the new results ONLY using the "get" Student class functions
+		Student newStudent = new Student("Ryan", "King", 90);
+		System.out.println("Here is the student's grade before the curve.");
+		System.out.println(newStudent.getscore());
 		
+		curvedGrade(newStudent, 10);
+		
+		System.out.println("Here is the student's curved grade.");
+		System.out.println(newStudent.getscore());
 		
 		// display the new results ONLY using the "toString" Student class functions
 		
@@ -71,9 +81,7 @@ public class Driver {
 	{
 		float result = 0; // default value
 		
-		// create the code to get this function to truely work
-		
-		
+		result = thisGrade + (thisGrade * percentCurve / 100);
 		
 		return result;
 	}
@@ -81,10 +89,9 @@ public class Driver {
 	public static void curvedGrade(Student thisStudent, int percentCurve)
 	{
 		// reset value WITHIN the Student instance to new curved grade!!
+		float score = thisStudent.getscore();
 		
-		
-	
-	
+		thisStudent.setscore(score + (score * percentCurve / 100));
 	}
 	
 	public static void passingExercise(int x, float y, String z, int [] array)
