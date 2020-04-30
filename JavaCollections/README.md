@@ -36,7 +36,7 @@ Submit in a zip file: Animal.java, Vehicle.java and Driver.java.
 	
 Create one ArrayList that handles basic Objects such as:
 
-'ArrayList<Object> stuff = new ArrayList <Object>();'
+```ArrayList<Object> stuff = new ArrayList <Object>();```
 	
 Add all previous items created into the same list. Print the list.
 	
