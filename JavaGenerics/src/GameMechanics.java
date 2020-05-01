@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class GameMechanics
 {
@@ -91,6 +92,7 @@ public class GameMechanics
 	
 	static public void sortedBattlefieldCharacters(ArrayList<Character> List)
 	{
-		
+		Collections.sort(List);
+		Collections.reverse(List);
 	}
 }

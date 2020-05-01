@@ -74,17 +74,17 @@ public class Driver {
 		
 		// Question 5
 		System.out.println("Before Sort");
-		for (int i = 0; i < characterList.size(); ++i) {
-			System.out.println(characterList.get(i));
+		for (Character character : characterList) {
+			System.out.println(character);
 		}	
+		System.out.println();
 		
-		Collections.sort(characterList);
-		Collections.reverse(characterList);
+		GameMechanics.sortedBattlefieldCharacters(characterList);
 		
-		System.out.println("\nAfter Sort");
-		for (int i = 0; i < characterList.size(); ++i) {
-			System.out.println(characterList.get(i));
-		}	
+		System.out.println("After Sort");
+		for (Character character : characterList) {
+			System.out.println(character);
+		}		
 	}
 
 }

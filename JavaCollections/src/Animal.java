@@ -55,6 +55,40 @@ public class Animal extends Address implements Comparable<Animal>
 	}
 
 	@Override
+	public int hashCode()
+	{
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + ((foodRequired == null) ? 0 : foodRequired.hashCode());
+		result = prime * result + type;
+		result = prime * result + Float.floatToIntBits(weight);
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj)
+	{
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Animal other = (Animal) obj;
+		if (foodRequired == null)
+		{
+			if (other.foodRequired != null)
+				return false;
+		} else if (!foodRequired.equals(other.foodRequired))
+			return false;
+		if (type != other.type)
+			return false;
+		if (Float.floatToIntBits(weight) != Float.floatToIntBits(other.weight))
+			return false;
+		return true;
+	}
+
+	@Override
 	public String toString()
 	{
 		return super.toString() + "\nAnimal [type=" + type + ", foodRequired=" + foodRequired + ", weight=" + weight

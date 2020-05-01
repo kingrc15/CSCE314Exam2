@@ -6,10 +6,10 @@ public class Driver
 	public static void main(String[] args)
 	{
 		// Question 1
-		Vehicle car4 = new Vehicle(0, 20, "LICENSE4", 4, "TX", "123 Street Ln", 77840, "College Station");
-		Vehicle car3 = new Vehicle(0, 20, "LICENSE3", 3, "VA", "123 Street Ln", 77840, "College Station");
-		Vehicle car2 = new Vehicle(0, 20, "LICENSE2", 2, "CA", "123 Street Ln", 77840, "College Station");
-		Vehicle car1 = new Vehicle(0, 20, "LICENSE1", 1, "MD", "123 Street Ln", 77840, "College Station");
+		Vehicle car4 = new Vehicle(0, 20, "LICENSE4", 8000, "TX", "123 Street Ln", 77840, "College Station");
+		Vehicle car3 = new Vehicle(0, 20, "LICENSE3", 4500, "VA", "123 Street Ln", 77840, "College Station");
+		Vehicle car2 = new Vehicle(0, 20, "LICENSE2", 9000, "CA", "123 Street Ln", 77840, "College Station");
+		Vehicle car1 = new Vehicle(0, 20, "LICENSE1", 5000, "MD", "123 Street Ln", 77840, "College Station");
 
 		Animal dog4 = new Animal(0, "Dog Food", 4, "AK", "123 Street Ln", 77840, "College Station");
 		Animal dog3 = new Animal(0, "Dog Food", 3, "AR", "123 Street Ln", 77840, "College Station");
@@ -48,7 +48,7 @@ public class Driver
 
 		
 		// Question 3
-		System.out.println("\n");
+		System.out.println();
 		ArrayList<Address> stuff = new ArrayList<Address>();
 		stuff.add(car4);
 		stuff.add(car3);
@@ -60,9 +60,9 @@ public class Driver
 		stuff.add(dog2);
 		stuff.add(dog1);
 
-		for (int i = 0; i < stuff.size(); i++)
+		for (Address thing : stuff)
 		{
-			System.out.println(stuff.get(i));
+			System.out.println(thing);
 		}
 		
 		
@@ -71,10 +71,10 @@ public class Driver
 
 		Collections.sort(stuff, compareAddresses);
 		
-		System.out.println("\n");
-		for (int i = 0; i < stuff.size(); i++)
+		System.out.println();
+		for (Address thing : stuff)
 		{
-			System.out.println(stuff.get(i));
+			System.out.println(thing);
 		}
 	}
 
