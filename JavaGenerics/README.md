@@ -31,7 +31,7 @@ Submit a zip file containing the answers to the questions above. Also include th
     1. Has one Arraylist parameters, Each Arraylist must contain either all Heros, Villians, or Characters.
     2. Returns true if the Arraylist contains all heros, 
     3. Returns false otherwise
-    4. Must use wildcards.
+    4. Must use wildcards.(Extends-Any Subtype of Variable(Upper Bound)) (Super-Any SuperType of Variable(Lower Bound)) 
     5. Can use instanceof to help you.
 3. Prove that your function works by:
     1. adding several correct Villains and Heroes Arraylists, Arraylist , Arraylist<Villian> for example.
